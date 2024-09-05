@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateIssueActivity"
+    android:background="@color/Theme">
+
+    <LinearLayout
+        android:id="@+id/layout_create_issue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <ImageButton
+            android:id="@+id/backButton_create_issue"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat = "@drawable/baseline_keyboard_backspace_24"
+            android:background="@drawable/button_selector"
+            android:contentDescription="Back"
+            ></ImageButton>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+
+
+        <LinearLayout
+            android:id="@+id/layout_text_create_issue"
+            android:layout_width="288dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Issue"
+                android:textSize="10dp"
+                ></TextView>
+            <TextView
+                android:id="@+id/text_create_issue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Choose a repository"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/white"></TextView>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_text_create_issue"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:hint="Search Issues"
+            android:visibility="gone"
+            ></EditText>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </Space>
+        <ImageButton
+            android:id="@+id/search_button_create_issue"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat = "@drawable/baseline_search_24"
+            android:background="@drawable/button_selector"
+            >
+        </ImageButton>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+    </LinearLayout>
+
+</LinearLayout>

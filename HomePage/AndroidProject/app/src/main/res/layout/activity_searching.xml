@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchingActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/activity_searching"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent">
+
+        </Space>
+
+        <EditText
+            android:id="@+id/TextSearching"
+            android:layout_width="295dp"
+            android:layout_height="match_parent"
+            android:hint="Search GitHub"
+            android:textSize="26dp"></EditText>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent">
+        </Space>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/Relative_searching"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Theme">
+        <TextView
+            android:id="@+id/text_1_searching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find your stuff."
+            android:layout_centerInParent="true"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            >
+        </TextView>
+        <Space
+            android:id="@+id/Space_1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/text_1_searching">
+
+        </Space>
+        <TextView
+            android:id="@+id/text_2_searching"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Search all of GitHub fo Pelple, Repositories, Organizations, Issues, and Pull Requests."
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_below="@+id/Space_1"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

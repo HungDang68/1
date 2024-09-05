@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StarredActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/layout_starred"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <ImageButton
+            android:id="@+id/backButton_starred"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat = "@drawable/baseline_keyboard_backspace_24"
+            android:background="@drawable/button_selector"
+            android:contentDescription="Back"
+            ></ImageButton>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+
+        <TextView
+            android:id="@+id/text_starred"
+            android:layout_width="288dp"
+            android:layout_height="match_parent"
+            android:text="Starred Repositories"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:background="@color/white"></TextView>
+        <EditText
+            android:id="@+id/edit_text_starred"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:hint="Search Pull Requests"
+            android:visibility="gone"
+            ></EditText>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </Space>
+        <ImageButton
+            android:id="@+id/search_button_starred"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat = "@drawable/baseline_search_24"
+            android:background="@drawable/button_selector"
+            >
+        </ImageButton>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_starred"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Theme">
+
+        <ImageView
+            android:id="@+id/image_starred"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_github">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text_starred_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Nothing starred yet"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/image_starred"
+            ></TextView>
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/text_starred_center"
+            android:text="Star repositories on GitHub to keep track of your favorite and inspirational code."
+            android:gravity="center"
+            android:textSize="18dp"
+            ></TextView>
+    </RelativeLayout>
+</LinearLayout>

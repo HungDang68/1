@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PullRequestsActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/layout_pull_requests"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <ImageButton
+            android:id="@+id/backButton_pull_requests"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat = "@drawable/baseline_keyboard_backspace_24"
+            android:background="@drawable/button_selector"
+            android:contentDescription="Back"
+            ></ImageButton>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+
+        <TextView
+            android:id="@+id/text_pull_requests"
+            android:layout_width="288dp"
+            android:layout_height="match_parent"
+            android:text="Pull Requests"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:background="@color/white"></TextView>
+        <EditText
+            android:id="@+id/edit_text_pull_requests"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:hint="Search Pull Requests"
+            android:visibility="gone"
+            ></EditText>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </Space>
+        <ImageButton
+            android:id="@+id/search_button_pull_requests"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat = "@drawable/baseline_search_24"
+            android:background="@drawable/button_selector"
+            >
+        </ImageButton>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/spinner_menu"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/open_menu_pull_quests"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_background"></Spinner>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </Space>
+
+            <Spinner
+                android:id="@+id/Created_menu_pull_requests"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_background"></Spinner>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </Space>
+
+            <Spinner
+                android:id="@+id/visibility_menu_pull_request"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_background"></Spinner>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </Space>
+            <Spinner
+                android:id="@+id/organization_menu_pull_requests"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_background"></Spinner>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </Space>
+
+            <Spinner
+                android:id="@+id/Repository_menu_pull_requests"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_background"></Spinner>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </Space>
+
+            <Spinner
+                android:id="@+id/Sort_menu_pull_requests"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_background"></Spinner>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </Space>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/center_pull_requests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Theme">
+
+        <ImageView
+            android:id="@+id/image_pull_requests"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_github">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="There aren't any issues"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/image_pull_requests"
+            ></TextView>
+    </RelativeLayout>
+
+</LinearLayout>
