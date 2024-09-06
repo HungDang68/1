@@ -61,7 +61,7 @@ public class Favorites_home_fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_favorites_home_fragment, container, false);
-        View customView1 = view.findViewById(R.id.layout_button_shortcut);
+        View customView1 = view.findViewById(R.id.layout_button_favorites);
         customView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Project App"
+rootProject.name = "GithubBrowser"
 include(":app")
- 

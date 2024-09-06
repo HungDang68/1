@@ -6,12 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Shortcut_Activity">
 
     <LinearLayout
         android:id="@+id/layout_Shortcuts"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@color/white"
         android:orientation="horizontal">
 
@@ -33,6 +34,8 @@
             android:layout_width="235dp"
             android:layout_height="match_parent"
             android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
             android:text="Shortcuts"
             android:textSize="28dp"
             android:textStyle="bold"></TextView>
@@ -58,16 +61,14 @@
 
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="18dp" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="50dp"
         android:orientation="vertical">
 
         <TextView
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -76,10 +77,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="46dp"
+        android:layout_height="50dp"
         android:orientation="vertical">
 
         <TextView
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -88,12 +91,13 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="18dp" />
+        android:layout_height="18dp"
+        android:background="@color/Theme" />
 
     <LinearLayout
         android:id="@+id/Create_shortcut_button"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -109,6 +113,8 @@
             android:layout_weight="1" />
 
         <TextView
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
             android:id="@+id/textView6"
             android:layout_width="306dp"
             android:layout_height="match_parent"
@@ -126,9 +132,11 @@
         android:orientation="vertical">
 
         <TextView
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
             android:id="@+id/textView7"
             android:layout_width="match_parent"
-            android:layout_height="49dp"
+            android:layout_height="50dp"
             android:text="TextView" />
     </LinearLayout>
 

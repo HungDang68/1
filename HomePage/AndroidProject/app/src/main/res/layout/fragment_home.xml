@@ -89,15 +89,14 @@
                 android:id="@+id/Issues"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:orientation="horizontal"
                 android:background="@drawable/button_selector"
-                android:onClick="onButtonClick"
-                android:orientation="horizontal">
-
+                android:onClick="onButtonClick">
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/background_issue_icon"
                     android:src="@drawable/issues"
+                    android:background="@drawable/background_issue_icon"
                     app:tint="@color/white">
 
                 </ImageView>
@@ -111,8 +110,8 @@
                     android:layout_width="180dp"
                     android:layout_height="match_parent"
                     android:text="Issues"
-                    android:textColor="@color/black"
-                    android:textSize="18dp">
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
 
                 </TextView>
 
@@ -362,13 +361,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:background="@color/black"></View>
-
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView"
-                android:name="vn.edu.usth.projectapp.Favorites_home_fragment"
+                android:name="com.example.githubbrowser.Favorites_home_fragment"
                 android:layout_width="match_parent"
-                android:layout_height="200dp" />
-
+                android:layout_height="200dp"
+                />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
@@ -379,7 +377,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView2"
-                android:name="vn.edu.usth.projectapp.ShortcustFragment"
+                android:name="com.example.githubbrowser.ShortcustFragment"
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
             <View
