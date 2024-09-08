@@ -97,7 +97,7 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="18dp"
-        android:background="@color/white" />
+        android:background="@color/Theme" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -111,7 +111,8 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="Selected"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -126,7 +127,8 @@
             android:background="@color/white"
             android:gravity="center_vertical"
             android:text="No favorites selected"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <Space
@@ -146,7 +148,8 @@
             android:layout_height="50dp"
             android:gravity="center_vertical"
             android:text="Select Repositories"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </LinearLayout>
