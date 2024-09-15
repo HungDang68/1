@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme"
+    android:orientation="vertical"
+    tools:context=".homepage.Favorites_Activity">
+
+    <LinearLayout
+        android:id="@+id/layout_Fav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton_Fav_activity"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_backspace_24"
+            android:background="@color/white"
+            android:contentDescription="Back"
+            ></ImageButton>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+
+        <TextView
+            android:id="@+id/text_Fav_activity"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:text=" Favorites"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></Space>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_searching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+           android:src="@drawable/baseline_search_24"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent">
+
+        </Space>
+
+        <EditText
+            android:id="@+id/TextSearching"
+            android:layout_width="352dp"
+            android:layout_height="match_parent"
+            android:hint="Search Repositories"
+            android:textColorHint="@color/Gray"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            ></EditText>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></Space>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="  Selected"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="  No favorites selected"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="  Select Repositories"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

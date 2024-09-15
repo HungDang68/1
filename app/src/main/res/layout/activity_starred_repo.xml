@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/started_repo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile.StarredRepoActivity"
+    android:background="#eff0f4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/backToProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:drawableLeft="@drawable/back"
+                    android:paddingHorizontal="0sp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:text="Back"
+                    android:textAllCaps="false">
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Starred Repositories"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/baseline_search_24"
+                android:hint=" Search"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="#848a86">
+            </EditText>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+            </Space>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing starred yet"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold">
+        </TextView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+        </Space>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Star repositories on GitHub to keep track of \nyour favorite projects and inspirational code."
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingHorizontal="13dp"
+            android:textSize="17dp">
+        </TextView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+        </Space>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore repository"
+            android:textColor="#0366d5"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
+            android:textSize="17dp">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

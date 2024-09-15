@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trophyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.TrophyActivity"
+    android:background="#002a60">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#002a60">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/closingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/pull_shark_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pull_shark_big" />
+    <TextView
+        android:id="@+id/pull_shark_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pull shark"
+        android:layout_below="@id/pull_shark_img"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/pull_shark_mess"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text="\@ngotruong764 opened pull requests that have been merged."
+        android:layout_below="@id/pull_shark_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"/>
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_below="@id/pull_shark_mess">
+    </Space>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30sp"
+        android:layout_marginHorizontal="20sp"
+        android:text="Share"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#335580"
+        android:textAllCaps="false">
+    </Button>
+
+</RelativeLayout>

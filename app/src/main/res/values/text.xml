@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="discover_text">Discover</string>
+    <string name="trending">Trending Repositories</string>
+    <string name="lists">Awesome Lists</string>
+    <string name="star">STAR</string>
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <string name="activity_text">Activity</string>
+</resources>

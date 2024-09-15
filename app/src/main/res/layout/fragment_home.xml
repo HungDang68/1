@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".homepage.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Home"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold"></TextView>
+        <Space
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+        </Space>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_view_home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black">
+
+    </View>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/list_item"
+            android:layout_width="360dp"
+            android:layout_height="486dp"
+            android:layout_margin="18dp"
+            android:orientation="vertical"
+            tools:ignore="InvalidId">
+
+            <LinearLayout
+                android:id="@+id/funtion1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="My Work"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black">
+                </TextView>
+                <Space
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    >
+                </Space>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </Space>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/Issues"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_selector"
+                android:onClick="onButtonClick">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/issues"
+                    android:background="@drawable/background_issue_icon"
+                    app:tint="@color/white"
+                    android:padding="2.5dp">
+
+                </ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Issues"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:id="@+id/Pull_Request"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_selector"
+                android:onClick="onButtonClick">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pull_request"
+                    android:background="@drawable/background_pull_request_icon"
+                    app:tint="@color/white"
+                    android:padding="5dp">
+
+                </ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Pull Requests"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:id="@+id/Discussion"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_selector"
+                android:onClick="onButtonClick">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/discussion"
+                    android:background="@drawable/background_discussion_icon"
+                    app:tint="@color/white"
+                    android:padding="5dp">
+
+                </ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Discussions"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:id="@+id/Projects"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_selector"
+                android:onClick="onButtonClick">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/project_icon"
+                    android:background="@drawable/background_project_icon"
+                    app:tint="@color/white"
+                    android:padding="5dp">
+
+                </ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Projects"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/repositories"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_selector"
+                android:onClick="onButtonClick">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/repository"
+                    android:background="@drawable/background_repositories_icon"
+                    app:tint="@color/white"
+                    android:padding="5dp">
+
+                </ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Repositories"
+                    android:textSize="18dp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:id="@+id/Organizations"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/button_selector"
+                android:onClick="onButtonClick">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/orgisation"
+                    android:background="@drawable/background_organizations_icon"
+                    app:tint="@color/white"
+                    android:padding="5dp">
+
+                </ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Organizations"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/Starrted"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/button_selector"
+                android:onClick="onButtonClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_starred_icon"
+                    android:src="@drawable/star"
+                    app:tint="@color/white"
+                    android:padding="5dp">
+
+                </ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="Starred"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"></View>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView"
+                android:name="com.example.githubbrowser.homepage.Favorites_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"></View>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></Space>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView2"
+                android:name="com.example.githubbrowser.homepage.ShortcustFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

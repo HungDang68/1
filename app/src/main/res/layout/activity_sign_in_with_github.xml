@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fefefe"
+    android:gravity="center"
+    tools:context=".SignInWithGithubActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/github_logo"
+        android:layout_margin="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_view"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_img"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/github_black_logo"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Sign in to GitHub"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to continue to GitHub Android"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:text="Username or email address"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:id="@+id/usernameOrEmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:background="@drawable/white_rounded_button"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:text="Password"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:text="Forgot Password?"
+                android:textColor="@color/grey" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/white_rounded_button"/>
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:background="@drawable/green_rounded_button"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_view"
+        android:text="Sign in with a passkey"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Terms"
+            android:gravity="center"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Privacy"
+            android:gravity="center"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Docs"
+            android:gravity="center"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Contact Github Support"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Managa Cookies"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="Do not share my personal information"
+            android:textColor="@color/grey" />
+
+    </LinearLayout>
+</LinearLayout>

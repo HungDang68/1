@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:id="@+id/layout_titel_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/backButton_bottom_sheet2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/baseline_local_dining_24"
+            >
+        </Button>
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent">
+        </Space>
+
+        <TextView
+            android:id="@+id/title_repoditory_notification"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Filter by repository "
+            android:textSize="26sp"
+            android:textStyle="bold">
+        </TextView>
+        <EditText
+            android:id="@+id/edit_text_repository_notification"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:hint="Filter repositories"
+            android:textColorHint="@color/Gray"
+            android:textSize="24dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/button_search_notification"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baseline_search_24_blue"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Theme"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/image_notifications_github"
+            android:layout_above="@+id/text_repositories_center"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/text_repositories_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing to see here why still short"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:gravity="center">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/Theme"></View>
+    </LinearLayout>
+
+</LinearLayout>

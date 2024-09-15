@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/xml_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        />
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/xml_title_bar"
+        android:contentDescription="@string/app_name">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="18dp"
+                android:background="@color/white"
+                android:gravity="start"
+                android:text="@string/discover_text"
+                android:textColor="@color/dark_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/trending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawableStart="@drawable/trending_icon"
+                android:paddingStart="18dp"
+                android:paddingEnd="180dp"
+                android:text="@string/trending"
+                android:textAllCaps="false"
+                android:textColor="#2c302d"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/Lists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawableStart="@drawable/smile"
+                android:paddingStart="18dp"
+                android:paddingEnd="230dp"
+                android:text="@string/lists"
+                android:textAllCaps="false"
+                android:textColor="#2c302d"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_text"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="129dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="270dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:contentDescription="@string/activity_text"
+                    android:clickable="true"
+                    app:srcCompat="@android:drawable/ic_menu_more" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/Frag_container_2"
+                android:layout_width="match_parent"
+                android:layout_height="482dp">
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Add the FrameLayout for fragment container -->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+</RelativeLayout>
