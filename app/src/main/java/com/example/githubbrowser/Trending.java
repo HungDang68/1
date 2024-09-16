@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -27,6 +28,7 @@ public class Trending extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_trending, container, false);
+        Toast.makeText(getContext(), "Spinner: " + "Trending", Toast.LENGTH_SHORT).show();
 
         Toolbar trending_toolbar = view.findViewById(R.id.xml_toolbar_trending);
         trending_toolbar.setTitle("Trending");

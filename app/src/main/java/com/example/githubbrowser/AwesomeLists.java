@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -28,6 +29,8 @@ public class AwesomeLists extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_awesome_lists, container, false);
+        Toast.makeText(getContext(), "Spinner: " + "AwesomeLists", Toast.LENGTH_SHORT).show();
+
         Toolbar list_toolbar = view.findViewById(R.id.xml_toolbar_list);
         list_toolbar.setTitle("Awesome Lists");
         list_toolbar.setTitleTextColor(Color.BLACK);

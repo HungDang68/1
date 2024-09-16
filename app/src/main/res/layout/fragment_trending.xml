@@ -30,426 +30,370 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="sindresorhus / awesome"
-                        android:textColor="@color/dark_text_color"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/editTextTextMultiLine1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="Awesome list about all kinds of interesting topics"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/text2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="332,7k" />
-
-                    <TextView
-                        android:id="@+id/text3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="590 contributor" />
-
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:layout_weight="0"
-                        android:background="@drawable/white_rounded_button"
-                        android:elevation="4dp"
-                        android:text="@string/star"
-                        android:textColor="@color/dark_text_color" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp" />
+                android:layout_height="10dp" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/text1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="google / guava"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/text4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-
-                        android:text="sindresorhus / awesome"
-                        android:textColor="@color/dark_text_color"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/editTextTextMultiLine2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="Awesome list about all kinds of interesting topics"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/text5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="332,7k" />
-
-                    <TextView
-                        android:id="@+id/text6"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="590 contributor" />
-
-                    <Button
-                        android:id="@+id/button9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:layout_weight="0"
-                        android:background="@drawable/white_rounded_button"
-                        android:elevation="4dp"
-                        android:text="@string/star"
-                        android:textColor="@color/dark_text_color" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/editTextTextMultiLine1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Google core libraries for Java"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/text7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="sindresorhus / awesome"
-                        android:textColor="@color/dark_text_color"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/editTextTextMultiLine3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="Awesome list about all kinds of interesting topics"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/text8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="332,7k" />
-
-                    <TextView
-                        android:id="@+id/text9"
-                        android:layout_width="match_parent"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="590 contributor" />
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:layout_weight="0"
-                        android:background="@drawable/white_rounded_button"
-                        android:elevation="4dp"
-                        android:text="@string/star"
-                        android:textColor="@color/dark_text_color" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/text2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="45,9k"
+                    android:textColor="@color/dark_text_color" />
 
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <TextView
-                        android:id="@+id/text13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="sindresorhus / awesome"
-                        android:textColor="@color/dark_text_color"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/editTextTextMultiLine5"
-                        android:layout_width="match_parent"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="Awesome list about all kinds of interesting topics"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/text14"
-                        android:layout_width="match_parent"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="332,7k" />
-
-                    <TextView
-                        android:id="@+id/text15"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="590 contributor" />
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:layout_weight="0"
-                        android:background="@drawable/white_rounded_button"
-                        android:elevation="4dp"
-                        android:text="@string/star"
-                        android:textColor="@color/dark_text_color" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/text3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="1.4k contributors"
+                    android:textColor="@color/dark_text_color" />
 
-                    <TextView
-                        android:id="@+id/text16"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="sindresorhus / awesome"
-                        android:textColor="@color/dark_text_color"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/editTextTextMultiLine6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="Awesome list about all kinds of interesting topics"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/text117"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="332,7k" />
-
-                    <TextView
-                        android:id="@+id/text18"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="590 contributor" />
-
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:layout_weight="0"
-                        android:background="@drawable/white_rounded_button"
-                        android:elevation="4dp"
-                        android:text="@string/star"
-                        android:textColor="@color/dark_text_color" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
+                <Button
+                    android:id="@+id/button3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/white_rounded_button"
+                    android:elevation="2dp"
+                    android:text="@string/star"
+                    android:textColor="@color/dark_text_color" />
 
-                    <TextView
-                        android:id="@+id/text19"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="sindresorhus / awesome"
-                        android:textColor="@color/dark_text_color"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/editTextTextMultiLine7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="Awesome list about all kinds of interesting topics"
-                        android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/text20"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_marginStart="18dp"
-                        android:text="332,7k" />
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="square / okhttp"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/text21"
-                        android:layout_width="match_parent"
-                        android:textColor="@color/dark_text_color"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
-                        android:text="590 contributor" />
+                <TextView
+                    android:id="@+id/editTextTextMultiLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="An HTTP client for Android and Java applications."
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp" />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:layout_weight="0"
-                        android:background="@drawable/white_rounded_button"
-                        android:elevation="2dp"
-                        android:text="@string/star"
-                        android:textColor="@color/dark_text_color" />
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="43,2k"
+                    android:textColor="@color/dark_text_color" />
 
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="840 contributors"
+                    android:textColor="@color/dark_text_color" />
 
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/white_rounded_button"
+                    android:elevation="2dp"
+                    android:text="@string/star"
+                    android:textColor="@color/dark_text_color" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="facebook / react"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="A declarative, efficient, and flexible JavaScript library for building user interfaces."
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="201k"
+                    android:textColor="@color/dark_text_color" />
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="3.2k contributors"
+                    android:textColor="@color/dark_text_color" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/white_rounded_button"
+                    android:elevation="2dp"
+                    android:text="@string/star"
+                    android:textColor="@color/dark_text_color" />
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="JetBrains / kotlin"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="The Kotlin Programming Language."
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="41.3k"
+                    android:textColor="@color/dark_text_color" />
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="1.1k contributors"
+                    android:textColor="@color/dark_text_color" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/white_rounded_button"
+                    android:elevation="2dp"
+                    android:text="@string/star"
+                    android:textColor="@color/dark_text_color" />
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/project_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="flutter / flutter"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/project_description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Flutter makes it easy and fast to build beautiful appsfor mobile and beyond"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/project_stars_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="152k"
+                    android:textColor="@color/dark_text_color" />
+
+                <TextView
+                    android:id="@+id/project_contributors_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="3.4k contributors"
+                    android:textColor="@color/dark_text_color" />
+
+                <Button
+                    android:id="@+id/favorite_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/white_rounded_button"
+                    android:elevation="2dp"
+                    android:text="@string/star"
+                    android:textColor="@color/dark_text_color" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="sindresorhus / awesome"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Awesome list about all kinds of interesting topics"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="590 contributor"
+                    android:textColor="@color/dark_text_color" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/white_rounded_button"
+                    android:elevation="2dp"
+                    android:text="@string/star"
+                    android:textColor="@color/dark_text_color" />
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
